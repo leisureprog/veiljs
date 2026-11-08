@@ -3,8 +3,8 @@ package unicode
 import (
 	"github.com/tdewolff/parse/v2/js"
 
-	"veiljs/internal/jsstr"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/internal/jsstr"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 func Apply(ast *js.AST) {

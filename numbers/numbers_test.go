@@ -3,10 +3,10 @@ package numbers
 import (
 	"testing"
 
-	"veiljs/compact"
-	"veiljs/internal/jstest"
-	"veiljs/internal/rng"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/compact"
+	"github.com/leisureprog/veiljs/internal/jstest"
+	"github.com/leisureprog/veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 var exprs = []string{

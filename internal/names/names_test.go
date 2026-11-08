@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"veiljs/internal/rng"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 func TestNextUniqueAndPrefixed(t *testing.T) {

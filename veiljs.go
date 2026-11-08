@@ -3,16 +3,16 @@ package veiljs
 import (
 	"strconv"
 
-	"veiljs/cff"
-	"veiljs/compact"
-	"veiljs/internal/names"
-	"veiljs/internal/rng"
-	"veiljs/numbers"
-	"veiljs/parser"
-	"veiljs/rename"
-	"veiljs/simplify"
-	"veiljs/stringarray"
-	"veiljs/unicode"
+	"github.com/leisureprog/veiljs/cff"
+	"github.com/leisureprog/veiljs/compact"
+	"github.com/leisureprog/veiljs/internal/names"
+	"github.com/leisureprog/veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/numbers"
+	"github.com/leisureprog/veiljs/parser"
+	"github.com/leisureprog/veiljs/rename"
+	"github.com/leisureprog/veiljs/simplify"
+	"github.com/leisureprog/veiljs/stringarray"
+	"github.com/leisureprog/veiljs/unicode"
 )
 
 func Obfuscate(data []byte) (string, error) {

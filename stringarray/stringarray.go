@@ -8,10 +8,10 @@ import (
 
 	"github.com/tdewolff/parse/v2/js"
 
-	"veiljs/internal/jsstr"
-	"veiljs/internal/names"
-	"veiljs/internal/rng"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/internal/jsstr"
+	"github.com/leisureprog/veiljs/internal/names"
+	"github.com/leisureprog/veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 type Options struct {

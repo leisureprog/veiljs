@@ -1,4 +1,4 @@
-module veiljs
+module github.com/leisureprog/veiljs
 
 go 1.26.0
 

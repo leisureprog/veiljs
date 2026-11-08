@@ -5,8 +5,8 @@ import (
 
 	"github.com/tdewolff/parse/v2/js"
 
-	"veiljs/internal/rng"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 func Apply(ast *js.AST, r *rng.RNG) {

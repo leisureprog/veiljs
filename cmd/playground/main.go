@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"veiljs"
+	"github.com/leisureprog/veiljs"
 )
 
 const page = `<!DOCTYPE html>

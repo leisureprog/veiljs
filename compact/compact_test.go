@@ -3,8 +3,8 @@ package compact
 import (
 	"testing"
 
-	"veiljs/internal/jstest"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/internal/jstest"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 var snippets = []string{

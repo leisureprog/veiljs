@@ -3,9 +3,9 @@ package simplify
 import (
 	"testing"
 
-	"veiljs/compact"
-	"veiljs/internal/jstest"
-	"veiljs/parser"
+	"github.com/leisureprog/veiljs/compact"
+	"github.com/leisureprog/veiljs/internal/jstest"
+	"github.com/leisureprog/veiljs/parser"
 )
 
 var exprs = []string{

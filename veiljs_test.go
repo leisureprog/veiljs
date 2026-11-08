@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"veiljs/internal/jstest"
+	"github.com/leisureprog/veiljs/internal/jstest"
 )
 
 var programs = []string{

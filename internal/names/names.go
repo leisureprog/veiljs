@@ -5,7 +5,7 @@ import (
 
 	"github.com/tdewolff/parse/v2/js"
 
-	"veiljs/internal/rng"
+	"github.com/leisureprog/veiljs/internal/rng"
 )
 
 type Gen struct {

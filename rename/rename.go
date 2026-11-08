@@ -3,7 +3,7 @@ package rename
 import (
 	"github.com/tdewolff/parse/v2/js"
 
-	"veiljs/internal/names"
+	"github.com/leisureprog/veiljs/internal/names"
 )
 
 func Apply(ast *js.AST, g *names.Gen) {
