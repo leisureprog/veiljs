@@ -68,6 +68,8 @@ out := veiljs.ObfuscateJS(code)
 
 ## Playground
 
+Live sandbox: [veiljs-playground.onrender.com](https://veiljs-playground.onrender.com)
+
 ```bash
 go run ./cmd/playground
 ```
