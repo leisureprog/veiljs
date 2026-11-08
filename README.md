@@ -66,6 +66,15 @@ Without error handling:
 out := veiljs.ObfuscateJS(code)
 ```
 
+## Playground
+
+```bash
+go run ./cmd/playground
+```
+
+Open http://localhost:8080 — interactive sandbox for testing transforms in the
+browser. Deployable to [Render](https://render.com) via the included `render.yaml`.
+
 ## API
 
 ```go
