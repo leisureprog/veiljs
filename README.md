@@ -17,7 +17,7 @@ Author: **Leisure**
 - **Compact** — minified code generator.
 
 Transformations are applied in order: String Array → Control Flow Flattening →
-Numbers To Expressions → Simplify → Unicode Escape Sequence → Rename Globals →
+Simplify → Numbers To Expressions → Unicode Escape Sequence → Rename Globals →
 Compact.
 
 ## Installation
