@@ -1,5 +1,7 @@
 # veiljs
 
+![veiljs](preview.png)
+
 A native JavaScript obfuscator written in pure Go. It mirrors the behavior of
 `javascript-obfuscator`, but runs without Node.js, CGO, `npx`, external binaries,
 or `exec.Command` — only Go and the standard library.
