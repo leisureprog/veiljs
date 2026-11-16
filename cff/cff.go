@@ -29,28 +29,16 @@ func flatten(b *js.BlockStmt, r *rng.RNG, g *names.Gen, threshold float64) {
 		return
 	}
 
-	var hoisted []js.BindingElement
 	body := make([]js.IStmt, 0, len(b.List))
 	for _, s := range b.List {
 		switch s := s.(type) {
 		case *js.DirectivePrologueStmt, *js.FuncDecl, *js.ClassDecl:
 			return
 		case *js.VarDecl:
-			if s.TokenType == js.VarToken {
-				body = append(body, s)
-				continue
+			if s.TokenType != js.VarToken {
+				return
 			}
-			for i := range s.List {
-				el := &s.List[i]
-				v, ok := el.Binding.(*js.Var)
-				if !ok {
-					return
-				}
-				hoisted = append(hoisted, js.BindingElement{Binding: &js.Var{Data: v.Name()}})
-				if el.Default != nil {
-					body = append(body, &js.ExprStmt{Value: &js.BinaryExpr{Op: js.EqToken, X: &js.Var{Data: v.Name()}, Y: el.Default}})
-				}
-			}
+			body = append(body, s)
 		default:
 			body = append(body, s)
 		}
@@ -71,7 +59,7 @@ func flatten(b *js.BlockStmt, r *rng.RNG, g *names.Gen, threshold float64) {
 
 	prelude := &js.VarDecl{
 		TokenType: js.VarToken,
-		List:      append(hoisted, js.BindingElement{Binding: &js.Var{Data: []byte(state)}, Default: intLit(0)}),
+		List:      []js.BindingElement{{Binding: &js.Var{Data: []byte(state)}, Default: intLit(0)}},
 	}
 	b.List = []js.IStmt{
 		prelude,
